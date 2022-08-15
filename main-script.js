@@ -25,12 +25,14 @@ async function makeAsideMenu(source, container) {
 }
 
 function makeAsideMenuItem(filmID, filmTitle) {
-  const asideMenuItem = document.createElement("li");
+  const asideMenuItem = document.createElement("a"),
+        menuItemWrapper = document.createElement("li");
   asideMenuItem.classList.add("aside_menu_list_item");
   asideMenuItem.setAttribute("data-filmid", filmID);
+  asideMenuItem.href = `#${filmTitle}`;
   asideMenuItem.innerHTML = filmTitle;
-  
-  return asideMenuItem;
+  menuItemWrapper.appendChild(asideMenuItem);
+  return menuItemWrapper;
 }
 
 function addAsideMenuListener(asideMenu) {
