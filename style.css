@@ -36,7 +36,7 @@ html {
   display: grid;
   margin: auto;
   min-height: 100vh;
-  width: 100vw;
+  width: 100%;
   padding: 0 2em 0 2em;
   grid-template-rows: 100px auto 70px;
   grid-template-columns: 100%;
@@ -141,6 +141,7 @@ html {
     rgba(255, 255, 255, 0)
   );
   border: 2px solid black;
+  outline: none;
 }
 
 .content {
@@ -223,6 +224,7 @@ html {
   align-items: center;
   text-transform: uppercase;
   font-family: "Dumbledor-font", "Times New Roman", Times, serif;
+  text-align: center;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -240,9 +242,9 @@ html {
     height: 60px;
     font-size: 0.7em;
   }
-  /* .aside_menu_list_item.active {
+  .aside_menu_list_item.active {
     border: 3px solid black;
-  } */
+  }
   .aside_menu_list_item::before {
     margin: auto 0.25em auto 0.25em;
     height: 30px;
@@ -286,9 +288,9 @@ html {
     height: 40px;
     font-size: 0.65em;
   }
-/*   .aside_menu_list_item.active {
-    border: 1px solid rgb(250, 128, 114);
-  } */
+  .aside_menu_list_item.active {
+    border: 2px solid black;
+  }
   .aside_menu_list_item::before {
     margin: auto 0.2em auto 0.2em;
     height: 25px;
