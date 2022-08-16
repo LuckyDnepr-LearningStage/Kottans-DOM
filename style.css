@@ -30,6 +30,7 @@ html {
   background: url(./img/main-background.jpg), url(./img/main-background2.jpg);
   background-repeat: repeat, repeat;
   background-blend-mode:lighten;
+  padding: 0 calc(20px - (100vw - 100%)) 0 0;
 }
 
 .wrapper {
